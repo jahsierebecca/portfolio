@@ -1,0 +1,218 @@
+/********************************************
+	Tag Resets
+********************************************/
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic|Open+Sans:300italic,400italic,600italic,400,300,600,700);
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  min-height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+  display: block; }
+
+/******************
+$breakpoint-extra-small: 20em;    //320px
+$breakpoint-small: 30em;          //480px
+$breakpoint-medium: 50em;         //800px
+$breakpoint-extra-medium: 65em;   //1040px
+$breakpoint-large: 80em;          //1280px
+$breakpoint-extra-large: 100em;   //1600px
+ 
+ 
+ 
+//=Media Queries Mixin
+//Usually kept in _mixins.scss
+ 
+@mixin MQ($canvas) {
+  @if $canvas == XS {
+    @media all and (min-width: $breakpoint-extra-small) {
+      @content;
+    }
+  } @else if $canvas == S {
+    @media all and (min-width: $breakpoint-small) {
+      @content;
+    }
+  } @else if $canvas == M {
+    @media all and (min-width: $breakpoint-medium) {
+      @content;
+    }
+  } @else if $canvas == XM {
+    @media all and (min-width: $breakpoint-extra-medium) {
+      @content;
+    }
+  } @else if $canvas == L {
+    @media all and (min-width: $breakpoint-large) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media all and (min-width: $breakpoint-extra-large) {
+      @content;
+    }
+  }
+}
+
+********************/
+/********************************************
+	Colors
+********************************************/
+/* ******************************************
+	Fonts
+****************************************** */
+h1, h2, h3, h4, h5, h6, .logo a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
+p {
+  font-family: "Gentium Basic", serif;
+  font-weight: 400; }
+
+h2 {
+  font-weight: 300;
+  color: white;
+  font-size: 3em; }
+
+/********************************************
+	NAV
+********************************************/
+#nav {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  padding: .75em; }
+  #nav a {
+    display: block;
+    float: left;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: #e74c3c; }
+  #nav ul {
+    clear: both;
+    width: 40%;
+    list-style: none;
+    float: right; }
+    #nav ul li {
+      float: right;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      margin: 0 20px 0 10px;
+      display: block;
+      clear: both; }
+      #nav ul li a {
+        font-size: 1em;
+        color: #2c3e50;
+        text-decoration: none; }
+
+@media screen and (min-width: 600px) {
+  #nav ul {
+    width: 85%;
+    display: inline;
+    clear: none;
+    float: none; }
+    #nav ul li a {
+      display: inline;
+      padding: 0, 15px; } }
+/********************************************
+	SECTION
+********************************************/
+.category {
+  height: 95vh;
+  box-sizing: border-box; }
+  .category h2 {
+    padding: 30% 10%; }
+
+.next {
+  box-sizing: border-box;
+  margin-left: 5%;
+  height: 5vh;
+  padding: .25em;
+  vertical-align: baseline; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+/********************************************
+	SECTION
+********************************************/
+#bio {
+  background-color: #2980b9; }
+  #bio h2 {
+    padding: 50% 10%; }
+
+#skills {
+  background-color: #1abc9c; }
+
+#web {
+  background-color: #f1c40f; }
+
+#graphic {
+  background-color: #f39c12; }
+
+#multimedia {
+  background-color: #e74c3c; }
+
+#contact {
+  background-color: #9b59b6; }
+
+footer {
+  height: 5vh; }
+
+/********************************************
+	SECTION
+********************************************/
+
+/*# sourceMappingURL=main.css.map */
